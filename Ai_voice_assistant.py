@@ -188,7 +188,7 @@ if __name__ == "__main__":
 
         elif 'news' in query:
             try:
-                jsonObj = urlopen('http://newsapi.org/v2/top-headlines?country=in&apiKey=00e52e7e085747c3aa84f83357dada85')
+                jsonObj = urlopen('api of news')
                 data = json.load(jsonObj)
                 i = 1
 
