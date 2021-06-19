@@ -60,7 +60,7 @@ def sendEmail(to,content):
     server.ehlo()
     server.starttls()   
 
-    server.login('kumawatsaab4646@gmail.com','password')
+    server.login('ABC@gmail.com','password')
     server.sendmail('sender@gmail.com',to,content)
     server.close()
 
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
         elif 'word' in query:
             speak("opening MS word..") 
-            ms_word = r'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office\Microsoft Office Word 2007.lnk'
+            ms_word = r'Microsoft Office Word 2007.lnk'
             os.startfile(ms_word) 
 
         elif "write a note" in query:
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
         elif 'play music' in query:  
-            songs_dir = 'E:\\Musics2021'
+            songs_dir = 'music folder link'
             music = os.listdir(songs_dir)
             speak('what should i play ?')
             speak('select a number...')        #random songs use this 
